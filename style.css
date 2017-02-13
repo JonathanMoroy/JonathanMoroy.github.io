@@ -26,13 +26,12 @@
 
 /* Propriétés de mon body et de mon bloc page */
 #bloc_page {
-  width: 1200px;
-  margin: auto;
   height: 1980px;
 }
 
 body {
   font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+  background-color: black;
   background-image: url("background/bckgrnd.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -50,42 +49,15 @@ header {
 
 /* Position et configuration du titre et de l'entrée de mon header */
 #header_title {
-  margin-left: 15px;
   font-size: 4em;
   font-family: scripttitle, 'Brush Script Std', 'Brush Script MT', cursive;
-  position: absolute;
-  bottom: 150px;
+  margin-bottom: 0px;
 }
 
 #header_underTitle {
-  margin-left: 15px;
   font-size: 1em;
   font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
-  position: absolute;
-  top: 55px;
-  left: 140px;
-}
-
-header img {
-  height: 290px;
-}
-
-#header_enter {
-  margin-left: 270px;
-  width: 300px;
-}
-
-#header_enter:hover {
-  margin-left: 265px;
-  opacity: 0.2;
-}
-
-/* Position et dimension du nav */
-nav {
-  position: absolute;
-  height: 300px;
-  right: 39px;
-  top: 10px;
+  margin-top: -5%;
 }
 
 /* Position et dimension des flêches */
@@ -96,7 +68,7 @@ nav img {
 
 #header_arrowTop {
   position: absolute;
-  right: 141px;
+  right: 150px;
   bottom: 141px;
 }
 
@@ -126,7 +98,7 @@ nav img {
 #header_arrowBot {
   display: flex;
   position: absolute;
-  right: 1px;
+  right: 10px;
   bottom: 0px;
 }
 
