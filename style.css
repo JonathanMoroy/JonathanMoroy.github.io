@@ -105,7 +105,7 @@ nav img {
 nav div p {
   margin-left: 1px;
 }
-/* WORK IN PROGRESS */
+/* Configuration du aside */
 aside img {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -115,6 +115,7 @@ aside {
   border-right: 1px solid #00FF00;
 }
 
+/* Configuration du article */
 article h1 {
   font-family: thyssen;
   font-size: 4em;
@@ -127,12 +128,30 @@ article {
 
 article a:hover {
   text-decoration: none;
+  color: #00FF00;
+}
+
+#e2n:hover {
+  color:#E84B14
 }
 
 article p:nth-child(4) {
   text-align: right;
 }
-/* Les paramètres de mes medias */
+
+/* Configuration du footer */
+footer {
+  height: 200px;
+  background-color: black;
+  border-top: 1px solid #00FF00;
+  text-align: center;
+}
+
+footer p {
+  margin: auto;
+}
+
+/* Les paramètres des medias */
 @media screen and (max-width: 650px) {
   header {
     height: 200px;
