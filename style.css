@@ -141,14 +141,19 @@ article p:nth-child(4) {
 
 /* Configuration du footer */
 footer {
-  height: 200px;
+  height: 100px;
   background-color: black;
   border-top: 1px solid #00FF00;
-  text-align: center;
 }
 
 footer p {
-  margin: auto;
+  text-align: center;
+  margin-top: 45px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: red;
 }
 
 /* Les paramètres des medias */
