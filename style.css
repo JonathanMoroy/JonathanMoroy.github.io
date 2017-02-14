@@ -160,6 +160,10 @@ article h1 {
   #header_title {
     font-size: 3em;
   }
+  #header_arrowTop:hover {
+    bottom: 56px;
+    opacity: 0.2;
+  }
 }
 
 @media screen and (max-width: 768px) {
