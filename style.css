@@ -168,4 +168,7 @@ article h1 {
   #header_underTitle {
     margin-top: -3%;
   }
+  body {
+    background-image: url("background/bckgrnd.jpg");
+  }
 }
