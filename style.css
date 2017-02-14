@@ -24,6 +24,34 @@
   font-style: normal;
 }
 
+/* Les paramètres de mes medias */
+@media screen and (max-width: 650px) {
+  header {
+    height: 200px;
+  }
+  nav img {
+    height: 50px;
+    width: 50px;
+  }
+  #header_underTitle {
+    margin-top: 0%;
+  }
+  #header_arrowTop {
+    position: absolute;
+    right: 61px;
+    bottom: 51px;
+  }
+  #header_title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header_underTitle {
+    margin-top: -3%;
+  }
+}
+
 /* Propriétés de mon body et de mon bloc page */
 #bloc_page {
   height: 1980px;
