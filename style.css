@@ -156,6 +156,10 @@ footer a:hover {
   color: red;
 }
 
+footer img {
+  height: 15px;
+}
+
 /* Les paramètres des medias */
 @media screen and (max-width: 650px) {
   header {
