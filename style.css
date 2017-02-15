@@ -126,10 +126,20 @@ nav div p {
   border-right: 1px solid #00FF00;
 }
 
+#aside_cv p:nth-child(2) {
+  text-align: center;
+  font-family: thyssen, Impact, "Arial Black", Arial, Verdana, sans-serif;
+  font-size: 3em;
+}
+
+#aside_cv p:nth-child(3) {
+  font-size: 1.2em;
+}
+
 /* Configuration du article */
 /* index et index_En */
 #article_index h1 {
-  font-family: thyssen;
+  font-family: thyssen, Impact, "Arial Black", Arial, Verdana, sans-serif;
   font-size: 4em;
 }
 
