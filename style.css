@@ -106,38 +106,53 @@ nav div p {
   margin-left: 1px;
 }
 /* Configuration du aside */
-aside img {
+/* index index_En */
+#aside_index img {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-aside {
+#aside_index {
+  border-right: 1px solid #00FF00;
+}
+
+/* cv et cv_En */
+#aside_cv img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#aside_cv {
   border-right: 1px solid #00FF00;
 }
 
 /* Configuration du article */
-article h1 {
+/* index et index_En */
+#article_index h1 {
   font-family: thyssen;
   font-size: 4em;
 }
 
-article {
+#article_index {
   font-size: 1.5em;
   word-wrap: break-word;
 }
 
-article a:hover {
+#e2n:hover {
+  color:#E84B14;
+  text-decoration: none;
+}
+
+.link_index:hover {
   text-decoration: none;
   color: #00FF00;
 }
 
-#e2n:hover {
-  color:#E84B14
-}
-
-article p:nth-child(4) {
+#article_index p:nth-child(4) {
   text-align: right;
 }
+
+/* cv et cv_En */
 
 /* Configuration du footer */
 footer {
@@ -193,26 +208,29 @@ footer img {
   body {
     background-image: url("background/bckgrnd.jpg");
   }
-  aside {
+  /* index et index_En */
+  #aside_index {
     border-right: 0px;
     border-bottom: 1px solid #00FF00;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  article h1 {
+  /* index et index_En */
+  #article_index h1 {
     font-size: 3.5em;
   }
-  article p {
+  #article_index p {
     font-size: 0.8em;
   }
 }
 
 @media screen and (max-width: 992px) {
-  article h1 {
+  /* index et index_En */
+  #article_index h1 {
     font-size: 3em;
   }
-  article p {
+  #article_index p {
     font-size: 0.6em;
   }
 }
