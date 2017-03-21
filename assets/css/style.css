@@ -179,8 +179,17 @@ nav div p {
   padding-top: 15px;
 }
 
-#article_cv_infoSkill span {
+#article_cv_infoSkill i {
   font-size: 1.2em;
+  color: #00FF00;
+}
+
+#article_cv_infoSkill a {
+  text-decoration: none;
+  color: white;
+}
+
+#article_cv_infoSkill a:hover {
   color: #00FF00;
 }
 
