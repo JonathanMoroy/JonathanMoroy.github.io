@@ -2,24 +2,36 @@
 /* Set-up pour ma police d'écriture personnalisée */
 @font-face {
   font-family: 'scripttitle';
-  src: url('police/scripttitle-webfont.eot');
-  src: url('police/scripttitle-webfont.eot?#iefix') format('embedded-opentype'),
-  url('police/scripttitle-webfont.woff2') format('woff2'),
-  url('police/scripttitle-webfont.woff') format('woff'),
-  url('police/scripttitle-webfont.ttf') format('truetype'),
-  url('police/scripttitle-webfont.svg#scripttitle') format('svg');
+  src: url('../fonts/scripttitle-webfont.eot');
+  src: url('../fonts/scripttitle-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/scripttitle-webfont.woff2') format('woff2'),
+  url('../fonts/scripttitle-webfont.woff') format('woff'),
+  url('../fonts/scripttitle-webfont.ttf') format('truetype'),
+  url('../fonts/scripttitle-webfont.svg#scripttitle') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'thyssen';
-  src: url('police/thyssen-webfont.eot');
-  src: url('police/thyssen-webfont.eot?#iefix') format('embedded-opentype'),
-  url('police/thyssen-webfont.woff2') format('woff2'),
-  url('police/thyssen-webfont.woff') format('woff'),
-  url('police/thyssen-webfont.ttf') format('truetype'),
-  url('police/thyssen-webfont.svg#thyssen') format('svg');
+  src: url('../fonts/thyssen-webfont.eot');
+  src: url('../fonts/thyssen-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/thyssen-webfont.woff2') format('woff2'),
+  url('../fonts/thyssen-webfont.woff') format('woff'),
+  url('../fonts/thyssen-webfont.ttf') format('truetype'),
+  url('../fonts/thyssen-webfont.svg#thyssen') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-awesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+  url('../fonts/fontawesome-webfont.woff') format('woff'),
+  url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+  url('../fonts/fontawesome-webfont.svg#fontawesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,7 +43,7 @@
 body {
   font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
   color: white;
-  background-image: url("background/bckgrnd.jpg");
+  background-image: url("../img/background/bckgrnd.jpg");
   background-color: black;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -163,6 +175,25 @@ nav div p {
 }
 
 /* cv et cv_En */
+#article_cv_infoSkill {
+  padding-top: 15px;
+}
+
+#article_cv_infoSkill span {
+  font-size: 1.2em;
+  color: #00FF00;
+}
+
+#article_cv_infoSkill ul {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.icone_info {
+  display: block;
+  width: 50px;
+  float: left;
+}
 
 /* Configuration du footer */
 footer {
@@ -216,7 +247,7 @@ footer img {
     margin-top: -3%;
   }
   body {
-    background-image: url("background/bckgrnd.jpg");
+    background-image: url("../img/background/bckgrnd768.jpg");
   }
   /* index et index_En */
   #aside_index {
