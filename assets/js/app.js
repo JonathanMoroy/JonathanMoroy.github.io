@@ -1,4 +1,8 @@
-var resumeApp = angular.module('resumeApp', ['ngRoute']);
+var resumeApp = angular.module('resumeApp', ['ngRoute'])
+        .run(function ($rootScope) {
+            $rootScope.french = true;
+            $rootScope.english = false;
+        });
 
 resumeApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
@@ -27,6 +31,14 @@ resumeApp.controller('indexCtrl', ['$scope', function ($scope) {
         // Configuration de mon contrôleur index
         $scope.header = 'assets/partials/header.html';
         $scope.footer = 'assets/partials/footer.html';
+        $scope.switchFrench = function () {
+            $scope.french = true;
+            $scope.english = false;
+        };
+        $scope.switchEnglish = function () {
+            $scope.french = false;
+            $scope.english = true;
+        };
     }]);
 
 resumeApp.controller('homeCtrl', ['$scope', function ($scope) {
