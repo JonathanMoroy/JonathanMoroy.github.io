@@ -1,7 +1,7 @@
 // Fonction qui attend que le document soit ready
 $(function () {
     // Ajout d'un keypress à window où un switch détermine avec les keycode des flêches directionnelles la navigation entre les pages
-    $(document).keypress(function (i) {
+    $(document).keydown(function (i) {
         // variable qui récupere les touches pressées
         var press = i.which || i.keyCode;
         // Switch qui détermine la localisation avec les touches 37, 38, 39, et 40
