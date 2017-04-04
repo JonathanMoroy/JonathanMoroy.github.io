@@ -180,8 +180,9 @@ nav div p {
 }
 
 #article_cv_infoSkill i {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #00FF00;
+    margin-right: 10px;
 }
 
 #article_cv_infoSkill a {
@@ -198,12 +199,14 @@ nav div p {
     font-size: 1.2em;
 }
 
-.icone_info {
-    display: block;
-    width: 50px;
-    float: left;
+#cv_firstInfo {
+    border-right: 1px dashed #00FF00;
+    padding-left: 30px;
 }
 
+#cv_secondInfo {
+    padding-left: 40px;
+}
 /* Configuration du footer */
 footer {
     height: 100px;
@@ -226,50 +229,6 @@ footer img {
 }
 
 /* Les paramètres des medias */
-@media screen and (max-width: 650px) {
-    header {
-        height: 200px;
-    }
-    nav img {
-        height: 50px;
-        width: 50px;
-    }
-    #header_underTitle {
-        margin-top: 0%;
-    }
-    #header_arrowTop {
-        position: absolute;
-        right: 61px;
-        bottom: 51px;
-    }
-    #header_title {
-        font-size: 3em;
-    }
-    #header_arrowTop:hover {
-        bottom: 56px;
-        opacity: 0.2;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #header_underTitle {
-        margin-top: -3%;
-    }
-    body {
-        background-image: url("../img/background/bckgrnd768.jpg");
-    }
-    /* index et index_En */
-    #aside_index {
-        border-right: 0px;
-        border-bottom: 1px solid #00FF00;
-    }
-    /* Cv */
-    #aside_cv {
-        border-right: 0px;
-        border-bottom: 1px solid #00FF00;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     /* index et index_En */
     #article_index h1 {
@@ -295,11 +254,72 @@ footer img {
     #article_index p {
         font-size: 0.6em;
     }
+    /* CV */
     #aside_cv p:nth-child(2) {
         font-size: 2em;
     }
 
     #aside_cv p:nth-child(3) {
         font-size: 1em;
+    }
+    #article_cv_infoSkill ul {
+        font-size: 1em;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header_underTitle {
+        margin-top: -3%;
+    }
+    body {
+        background-image: url("../img/background/bckgrnd768.jpg");
+    }
+    /* index et index_En */
+    #aside_index {
+        border-right: 0px;
+        border-bottom: 1px solid #00FF00;
+    }
+    /* Cv */
+    #aside_cv {
+        border-right: 0px;
+        border-bottom: 1px solid #00FF00;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 200px;
+    }
+    nav img {
+        height: 50px;
+        width: 50px;
+    }
+    #header_underTitle {
+        margin-top: 0%;
+    }
+    #header_arrowTop {
+        position: absolute;
+        right: 61px;
+        bottom: 51px;
+    }
+    #header_title {
+        font-size: 3em;
+    }
+    #header_arrowTop:hover {
+        bottom: 56px;
+        opacity: 0.2;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    #cv_firstInfo {
+        border-right: 0px;
+    }
+    #cv_firstInfo i {
+        margin-right: 6px;
+    }
+    #cv_div_secondInfo{
+        border-left: 1px dashed #00FF00;
     }
 }
