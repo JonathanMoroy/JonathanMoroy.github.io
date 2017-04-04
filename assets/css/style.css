@@ -40,6 +40,10 @@
 #bloc_page {
 }
 
+a {
+    outline-style: none;
+}
+
 body {
     font-family: 'thyssen', 'Arial Black', Arial, Verdana, sans-serif;
     color: white;
@@ -82,29 +86,6 @@ nav img {
     position: absolute;
     right: 150px;
     bottom: 141px;
-}
-
-#header_arrowTop:hover {
-    bottom: 146px;
-    opacity: 0.2;
-}
-
-#header_arrowBottom:hover {
-    position: relative;
-    top: 5px;
-    opacity: 0.2;
-}
-
-#header_arrowLeft:hover {
-    position: relative;
-    right: 5px;
-    opacity: 0.2;
-}
-
-#header_arrowRight:hover {
-    position: relative;
-    left: 5px;
-    opacity: 0.2;
 }
 
 #header_arrowBot {
@@ -224,6 +205,10 @@ footer a:hover {
     color: red;
 }
 
+footer a:focus {
+    text-decoration: none;
+}
+
 footer img {
     height: 15px;
 }
@@ -305,10 +290,6 @@ footer img {
     }
     #header_title {
         font-size: 3em;
-    }
-    #header_arrowTop:hover {
-        bottom: 56px;
-        opacity: 0.2;
     }
 }
 
