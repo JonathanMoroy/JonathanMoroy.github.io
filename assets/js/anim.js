@@ -13,6 +13,30 @@ $(function () {
             });
         }
     });
+    // mouseover et mouseout de la flèche contact qui défini l'animation.
+    $('#header_arrowLeft').mouseover(function () {
+        $('#header_arrowLeft').css({
+            'position': 'relative',
+            'right': '5px',
+            'opacity': '0.2'
+        });
+    });
+    // mouseover et mouseout de la flèche projet qui défini l'animation.
+    $('#header_arrowRight').mouseover(function () {
+        $('#header_arrowRight').css({
+            'position': 'relative',
+            'left': '5px',
+            'opacity': '0.2'
+        });
+    });
+    // mouseover et mouseout de la flèche home qui défini l'animation.
+    $('#header_arrowBottom').mouseover(function () {
+        $('#header_arrowBottom').css({
+            'position': 'relative',
+            'top': '5px',
+            'opacity': '0.2'
+        });
+    });
     $('#header_arrowTop').mouseout(function () {
         if ($(document).width() <= 650) {
             $('#header_arrowTop').css({
@@ -26,46 +50,22 @@ $(function () {
             });
         }
     });
-    // mouseover et mouseout de la flèche contact qui défini l'animation.
-    $('#header_arrowLeft').mouseover(function () {
-        $(this).css({
-            'position': 'relative',
-            'right': '5px',
-            'opacity': '0.2'
-        });
-    });
     $('#header_arrowLeft').mouseout(function () {
-        $(this).css({
+        $('#header_arrowLeft').css({
             'position': 'relative',
             'right': '0px',
             'opacity': '1'
         });
     });
-    // mouseover et mouseout de la flèche projet qui défini l'animation.
-    $('#header_arrowRight').mouseover(function () {
-        $(this).css({
-            'position': 'relative',
-            'left': '5px',
-            'opacity': '0.2'
-        });
-    });
     $('#header_arrowRight').mouseout(function () {
-        $(this).css({
+        $('#header_arrowRight').css({
             'position': 'relative',
             'left': '0px',
             'opacity': '1'
         });
     });
-    // mouseover et mouseout de la flèche home qui défini l'animation.
-    $('#header_arrowBottom').mouseover(function () {
-        $(this).css({
-            'position': 'relative',
-            'top': '5px',
-            'opacity': '0.2'
-        });
-    });
     $('#header_arrowBottom').mouseout(function () {
-        $(this).css({
+        $('#header_arrowBottom').css({
             'position': 'relative',
             'top': '0px',
             'opacity': '1'
