@@ -29,8 +29,6 @@ resumeApp.config(['$routeProvider', function ($routeProvider) {
 
 resumeApp.controller('indexCtrl', ['$scope', function ($scope) {
         // Configuration de mon contrôleur index
-        $scope.header = 'assets/partials/header.html';
-        $scope.footer = 'assets/partials/footer.html';
         $scope.switchFrench = function () {
             $scope.french = true;
             $scope.english = false;
