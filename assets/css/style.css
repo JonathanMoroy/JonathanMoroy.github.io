@@ -72,7 +72,7 @@ header {
 
 #header_underTitle {
     font-size: 1em;
-    font-family: Impact, 'Arial Black', Arial, Verdana, sans-serif;
+    font-family: 'Arial Black', Arial, Verdana, sans-serif;
     margin-top: -5%;
 }
 
@@ -180,14 +180,70 @@ nav div p {
     font-size: 1.2em;
 }
 
-#cv_firstInfo {
+.cv_firstInfo {
     border-right: 1px dashed #00FF00;
     padding-left: 30px;
 }
 
-#cv_secondInfo {
+.cv_secondInfo {
     padding-left: 40px;
 }
+
+.cv_info {
+    border-bottom: 1px solid #00FF00;
+}
+
+.cv_skill_title {
+    text-align: center;
+    font-family: 'scripttitle', 'thyssen', 'Arial Black', Arial, Verdana, sans-serif;
+}
+
+.cv_skill_os {
+    text-align: center;
+}
+
+.cv_skill_bar {
+    margin-bottom: 5px;
+}
+
+.cv_skill_name {
+    color: #00FF00;
+    font-size: 1.2em;
+}
+
+.cv_skill_bar {
+    border-style: double;
+    border-width: 5px;
+    border-color: #00FF00;
+    display: none;
+}
+
+.pacman {
+    height: 30px;
+}
+
+.skill_toggle {
+    position: relative;
+    top: 5px;
+}
+
+.skill_toggle_up {
+    display: none;
+    cursor: pointer;
+}
+
+.skill_toggle_down {
+    cursor: pointer;
+}
+
+.cv_skill_list {
+    display: none;
+}
+
+
+
+
+
 /* Configuration du footer */
 footer {
     height: 100px;
@@ -294,13 +350,13 @@ footer img {
 }
 
 @media screen and (max-width: 358px) {
-    #cv_firstInfo {
+    .cv_firstInfo {
         border-right: 0px;
     }
-    #cv_firstInfo i {
+    #article_cv_infoSkill i {
         margin-right: 6px;
     }
-    #cv_div_secondInfo{
+    .cv_div_secondInfo {
         border-left: 1px dashed #00FF00;
     }
 }
