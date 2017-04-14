@@ -237,11 +237,21 @@ nav div p {
     margin-right: 0%;
 }
 
+.skill_percent {
+    text-align: center;
+    float: left;
+    display: inline;
+    position: absolute;
+    right: 5%;
+    top: 5px;
+    opacity: 0;
+}
 
 .pacman_wave{
     background-color: black;
     width: 10%;
     padding: 0px;
+    position: relative;
 }
 
 
