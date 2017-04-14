@@ -37,22 +37,26 @@ resumeApp.controller('indexCtrl', ['$scope', function ($scope) {
             $scope.french = false;
             $scope.english = true;
         };
-        
-        $scope.toggleAnim = function(){
-        $('.skill_toggle_down').delay(500).css('display', 'none');
-        $('.skill_toggle_up').delay(500).css('display', 'inline-block');
-        $('.cv_skill_list').slideDown(500);
-        $('.cv_skill_bar').delay(500).animate({width: 'toggle'}, 2000);  
-    };
-    
-    $scope.hideAnim = function(){
-        $('.skill_toggle_down').delay(500).css('display', 'inline-block');
-        $('.skill_toggle_up').delay(500).css('display', 'none');
-        $('.cv_skill_list').slideUp(500);
-        $('.cv_skill_bar').delay(500).animate({width: 'toggle'}, 1);  
-    };
-    
-    
+
+        $scope.toggleAnim = function () {
+            $('.skill_toggle_down').delay(500).css('display', 'none');
+            $('.skill_toggle_up').delay(500).css('display', 'inline-block');
+            $('.cv_skill_list').slideDown(500);
+            $('.cv_skill_bar').delay(500).animate({width: 'toggle'}, 1500);
+            $('.cv_skill_bar_gomme').delay(300).animate({width: 'toggle'}, 1500);
+            $('.pacman_wave').delay(1500).animate({'padding-left': '55%'}, 2000);
+        };
+
+        $scope.hideAnim = function () {
+            $('.skill_toggle_down').delay(500).css('display', 'inline-block');
+            $('.skill_toggle_up').delay(500).css('display', 'none');
+            $('.cv_skill_list').slideUp(500);
+            $('.cv_skill_bar').delay(500).animate({width: 'toggle'}, 1);
+            $('.cv_skill_bar_gomme').delay(500).animate({width: 'toggle'}, 1);
+            $('.pacman_wave').delay(500).animate({'padding-left': '0%', width: '10px'}, 1);
+        };
+
+
     }]);
 
 resumeApp.controller('homeCtrl', ['$scope', function ($scope) {

@@ -209,18 +209,41 @@ nav div p {
 .cv_skill_name {
     color: #00FF00;
     font-size: 1.2em;
+    height: 45px;
+    text-align: center;
+    padding-top: 6px;
 }
 
 .cv_skill_bar {
     border-style: double;
     border-width: 5px;
     border-color: #00FF00;
+    padding: 0px;
     display: none;
 }
 
+.cv_skill_bar_gomme {
+   background-image: url("../img/pac-gomme.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 30px;
+    width: 380px;
+    display: none;
+}
+
+
 .pacman {
     height: 30px;
+    margin-right: 0%;
 }
+
+
+.pacman_wave{
+    background-color: black;
+    width: 10%;
+    padding: 0px;
+}
+
 
 .skill_toggle {
     position: relative;
@@ -239,7 +262,6 @@ nav div p {
 .cv_skill_list {
     display: none;
 }
-
 
 
 
@@ -281,9 +303,11 @@ footer img {
     #aside_cv p:nth-child(2) {
         font-size: 2.5em;
     }
-
     #aside_cv p:nth-child(3) {
         font-size: 1.2em;
+    }
+    .cv_skill_bar_gomme {
+        width: 313px;
     }
 }
 
@@ -307,6 +331,9 @@ footer img {
         font-size: 1em;
         padding-left: 0px;
     }
+    .cv_skill_bar_gomme {
+        width: 240px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -325,6 +352,9 @@ footer img {
     #aside_cv {
         border-right: 0px;
         border-bottom: 1px solid #00FF00;
+    }
+    .cv_skill_bar_gomme {
+        width: 100%;
     }
 }
 
