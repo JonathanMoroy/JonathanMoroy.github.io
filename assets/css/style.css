@@ -71,7 +71,7 @@ header {
 
 /* Position et configuration du titre et de l'entrée de mon header */
 #header_title {
-    font-size: 4em;
+    font-size: 6em;
     font-family: 'scripttitle', 'Brush Script Std', 'Brush Script MT', cursive;
     margin-bottom: 0px;
 }
@@ -93,7 +93,7 @@ header {
 }
 
 #header_underTitle {
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Arial Black', Arial, Verdana, sans-serif;
     margin-top: -5%;
 }
@@ -211,6 +211,10 @@ nav div p {
     padding-left: 40px;
 }
 
+.cv_firstInfo li, .cv_div_secondInfo li {
+    font-size: 1.2em;
+}
+
 .cv_info {
     border-bottom: 1px solid #00FF00;
 }
@@ -218,6 +222,7 @@ nav div p {
 .cv_skill_title {
     text-align: center;
     font-family: 'scripttitle', 'thyssen', 'Arial Black', Arial, Verdana, sans-serif;
+    font-size: 3em;
 }
 
 .cv_skill_os {
@@ -333,19 +338,24 @@ footer img {
     #article_index p {
         font-size: 0.8em;
     }
-    #aside_cv p:nth-child(2) {
-        font-size: 2.5em;
-    }
-    #aside_cv p:nth-child(3) {
-        font-size: 1.2em;
-    }
     .cv_skill_bar_gomme {
         width: 313px;
+    }
+    .cv_firstInfo li, .cv_div_secondInfo li {
+    font-size: 1.04em;
     }
 }
 
 @media screen and (max-width: 992px) {
     /* index et index_En */
+    #header_title {
+        font-size: 4em;
+    }
+    
+    #header_underTitle {
+        font-size: 1.2em;
+    }
+    
     #article_index h1 {
         font-size: 2.3em;
     }
@@ -353,12 +363,8 @@ footer img {
         font-size: 0.6em;
     }
     /* CV */
-    #aside_cv p:nth-child(2) {
-        font-size: 2em;
-    }
-
     #aside_cv p:nth-child(3) {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     #article_cv_infoSkill ul {
         font-size: 1em;
@@ -372,6 +378,7 @@ footer img {
 @media screen and (max-width: 768px) {
     #header_underTitle {
         margin-top: -3%;
+        font-size: 1em;
     }
     body {
         background-image: url("../img/background/bckgrnd768.jpg");
@@ -409,6 +416,9 @@ footer img {
     }
     #header_title {
         font-size: 3em;
+    }
+    .cv_firstInfo li, .cv_div_secondInfo li {
+    font-size: 1em;
     }
 }
 
