@@ -44,6 +44,11 @@ a {
     outline-style: none;
 }
 
+.cursorPointer {
+    cursor: pointer;
+    color: #337ab7;
+}
+
 body {
     font-family: 'thyssen', 'Arial Black', Arial, Verdana, sans-serif;
     color: white;
@@ -52,6 +57,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 /* Dimension et configuration de mon header */
@@ -68,6 +74,22 @@ header {
     font-size: 4em;
     font-family: 'scripttitle', 'Brush Script Std', 'Brush Script MT', cursive;
     margin-bottom: 0px;
+}
+
+#header_switchLangageEn {
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#header_switchLangageFr {
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    cursor: pointer;
 }
 
 #header_underTitle {
@@ -286,14 +308,15 @@ footer {
 footer p {
     text-align: center;
     margin-top: 45px;
+    font-size: 16px;
 }
 
-footer a:hover {
+footer span:hover {
     text-decoration: none;
     color: red;
 }
 
-footer a:focus {
+footer span:focus {
     text-decoration: none;
 }
 

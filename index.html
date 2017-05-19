@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
         <script src="assets/js/angular.js" type="text/javascript"></script>
         <script src="assets/js/angular-route.js" type="text/javascript"></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
         <title>Jonathan Moroy</title>
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -31,6 +32,7 @@
     <body ng-app="resumeApp">
         <div id="bloc_page" class="container" ng-controller="indexCtrl">
             <header class="row">
+                <img id="header_switchLangageEn" src="assets/img/uk_0.png" alt="United Kingdom Flag" title="Switch to English" ng-click="switchEnglish()"/><img id="header_switchLangageFr" src="assets/img/fr_0.png" alt="Drapeau de la France" title="Passer en Français" ng-click="switchFrench()"/>
                 <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
                     <p id="header_title">Jonathan Moroy</p>
                     <div class="row">
@@ -48,7 +50,7 @@
             </header>
             <div ng-view></div>
             <footer class="row">
-                <p><a href="" ng-click="switchFrench()">Français <img src="assets/img/fr_0.png" alt="Langue Française"/></a> / <a href="" ng-click="switchEnglish()">English <img src="assets/img/uk_0.png" alt="English Language"/></a></p>
+                <p><span class="cursorPointer" ng-click="switchFrench()">Français <img src="assets/img/fr_0.png" alt="Langue Française"/></span> / <span class="cursorPointer" ng-click="switchEnglish()">English <img src="assets/img/uk_0.png" alt="English Language"/></span></p>
             </footer>
         </div>
         <script src="assets/js/app.js" type="text/javascript"></script>
