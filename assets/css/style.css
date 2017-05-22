@@ -330,6 +330,20 @@ nav div p {
     margin-top: 20px;
 }
 
+/* officialDocument */
+
+#officialDocument {
+    border-top: 1px solid #00FF00;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#officialDocument a {
+    width: 98px;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
 /* Configuration du footer */
 footer {
     height: 100px;
