@@ -145,11 +145,11 @@ nav div p {
     font-size: 1.4em;
 }
 
-#aside_formation {
+.aside_formation {
     border-top: 1px solid #00FF00;
 }
 
-#opquastLink:hover {
+.opquastLink:hover {
     color: #2D9D9E;
     text-decoration: none;
 }
@@ -414,7 +414,7 @@ footer img {
     .cv_skill_bar_gomme {
         width: 240px;
     }
-    #aside_formation p {
+    .aside_formation p {
         font-size: 1.2em;
     }
     #article_experience p {

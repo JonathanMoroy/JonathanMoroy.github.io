@@ -1,10 +1,10 @@
-<div ng-show="french">
-    <section class="row">
-        <aside id="aside_cv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <p><img src="assets/img/meblack.jpg" class="img-responsive center-block" alt="Photo de Jonathan"/></p>
-            <h2 class="cv_skill_title">Introduction</h2>
-            <p>Passionné depuis mon plus jeune âge par la technologie et le multimédia, j'ai tout d'abord orienté mes études vers une filiére professionnelle (la plasturgie), avant de revenir vers l'informatique, domaine qui me tient particuliérement à coeur. Actuellement en formation chez E2N je prépare un titre professionnel développeur logiciel. Je continue à acquérir de nouvelles compétences en dehors de la formation, notamment dans le domaine du montage vidéo.</p>
-            <div id="aside_formation" class="row">
+<section class="row">
+    <aside id="aside_cv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <p><img src="assets/img/meblack.jpg" class="img-responsive center-block" alt="Photo de Jonathan"/></p>
+        <h2 class="cv_skill_title">Introduction</h2>
+        <div ng-show="french">
+            <p>Passionné depuis mon plus jeune âge par la technologie et le multimédia, j'ai tout d'abord orienté mes études vers une filiére professionnelle (la plasturgie), avant de revenir vers l'informatique, domaine qui me tient particuliérement à coeur. Actuellement en formation chez E2N, labellisée grande école du numérique, je me forme au métier de développeur web et prépare un titre professionnel développeur logiciel de niveau III équivalent BAC +2. Je continue à acquérir de nouvelles compétences pendant et en dehors de la formation.</p>
+            <div class="row aside_formation">
                 <div class="col-lg-12">
                     <h2 class="cv_skill_title">Formations</h2>
                     <h3 class="aside_years"><em>2017</em></h3>
@@ -14,7 +14,7 @@
                         Labellisée Grande École du Numérique par l'État - 6 mois à temps plein<br/><br/>
                         <strong>Certification Opquast : 850/1000 points</strong><br/>
                         Formé aux bonnes pratiques et à l’accessibilité web<br/>
-                        Visible à cette adresse : <a id="opquastLink" href="https://certificates.opquast.com/certificate/ISNUCM/">certificates.opquast.com/certificate/ISNUCM/</a>
+                        Visible à cette adresse : <a class="opquastLink" href="https://certificates.opquast.com/certificate/ISNUCM/">certificates.opquast.com/certificate/ISNUCM/</a>
                     </p>
                     <h3 class="aside_years"><em>2011</em></h3>
                     <p>
@@ -23,66 +23,104 @@
                     </p>
                 </div>
             </div>
-        </aside>
-        <article id="article_cv_infoSkill" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="row cv_info">
-                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-4">
-                    <ul class="cv_firstInfo">
-                        <li>Jonathan Moroy</li>
-                        <li>16 juillet 1990</li>
-                        <li><a class="faa-parent animated-hover" href="https://github.com/JonathanMoroy"><i class="fa fa-github faa-tada icone_info" aria-hidden="true"></i></a><a class="faa-parent animated-hover" href="https://www.linkedin.com/in/jonathan-moroy-7aab7113a/"><i class="fa fa-linkedin faa-tada icone_info" aria-hidden="true"></i></a><a class="faa-parent animated-hover" href="https://twitter.com/Jonathan_Moroy"><i class="fa fa-twitter faa-tada icone_info" aria-hidden="true"></i></a></li>               
-                    </ul>
-                </div>
-                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-8 cv_div_secondInfo">
-                    <ul class="cv_secondInfo">
-                        <li>jonathan.moroy@gmail.com</li>
-                        <li>06.09.33.21.96</li>
-                        <li>503 rue de la mairie, 60400 Appilly</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cv_skill">
-                <h2 class="cv_skill_title">Compétences</h2>
-
-                <div class="row" id="os_list">
-                    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><em>OS</em> <i ng-click="osAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="osHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
-                    <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Linux: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="linux"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Windows: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="windows"><span class="skill_percent">40 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                    </div>
-                </div>
-                <div class="row" id="langage_list">
-                    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><em>Langages</em> <i ng-click="langageAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="langageHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
-                    <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">HTML: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="html_wave"><span class="skill_percent">80 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">CSS: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="css_wave"><span class="skill_percent">80 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">JavaScript: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="js_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">PHP: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="php_wave"><span class="skill_percent">20 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">SQL: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="sql_wave"><span class="skill_percent">20 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                    </div>
-                </div>
-                <div class="row" id="framework_list">
-                    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><em>Frameworks</em> <i ng-click="frameworkAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="frameworkHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
-                    <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Bootstrap: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="bootstrap_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">JQuery/UI: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="jquery_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">AngularJS: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="angular_wave"><span class="skill_percent">40 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Symfony: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="symfony_wave"><span class="skill_percent">0 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                    </div>
-                </div>
-                <div class="row" id="tool_list">
-                    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><em>Outils</em> <i ng-click="toolAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="toolHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
-                    <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Terminal: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="terminal_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Nano: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="nano_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Atom: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="atom_wave"><span class="skill_percent">80 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">NetBeans: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="netbeans_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                        <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Git: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="git_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
-                    </div>
-                </div>
-            </div>
-            <div id="article_experience" class="row">
+        </div>
+        <div ng-show="english">
+            <p>Passionate since my earliest age by technology and multimedia, I initially oriented my studies towards a professional path (the plasturgy), before returning to the computer, a field that is particularly close to my heart. Currently in formation at E2N, labeled a great digital school by the state, I train as a web developer and prepare a professional title developer software level III equivalent two-year Higher Education. I continue to acquire new skills during and outside of training.</p>
+            <div class="row aside_formation">
                 <div class="col-lg-12">
+                    <h2 class="cv_skill_title">Formations</h2>
+                    <h3 class="aside_years"><em>2017</em></h3>
+                    <p>
+                        <strong>Preparation of Professional Title level III: Software Developer</strong><br/>
+                        Training at E2N - Noyon, Hauts-de-France at 50min from Paris<br/>
+                        Labeled as a great digital school by the state - 6 months full-time<br/><br/>
+                        <strong>Opquast certification: 850/1000 points</strong><br/>
+                        Trained in good practices and web accessibility<br/>
+                        Visible to this address: <a class="opquastLink" href="https://certificates.opquast.com/certificate/ISNUCM/">certificates.opquast.com/certificate/ISNUCM/</a>
+                    </p>
+                    <h3 class="aside_years"><em>2011</em></h3>
+                    <p>
+                        <strong>Vocational bachelor's degree in Plasturgy</strong><br/>                 
+                        Lycée Jean Macé - Chauny, Hauts-de-France (02)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <article id="article_cv_infoSkill" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="row cv_info">
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-4">
+                <ul class="cv_firstInfo">
+                    <li>Jonathan Moroy</li>
+                    <div ng-show="french">
+                        <li>16 juillet 1990</li>
+                    </div>
+                    <div ng-show="english">
+                        <li>16 july 1990</li>
+                    </div>
+                    <li><a class="faa-parent animated-hover" href="https://github.com/JonathanMoroy"><i class="fa fa-github faa-tada icone_info" aria-hidden="true"></i></a><a class="faa-parent animated-hover" href="https://www.linkedin.com/in/jonathan-moroy-7aab7113a/"><i class="fa fa-linkedin faa-tada icone_info" aria-hidden="true"></i></a><a class="faa-parent animated-hover" href="https://twitter.com/Jonathan_Moroy"><i class="fa fa-twitter faa-tada icone_info" aria-hidden="true"></i></a></li>               
+                </ul>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-7 col-xs-8 cv_div_secondInfo">
+                <ul class="cv_secondInfo">
+                    <li>jonathan.moroy@gmail.com</li>
+                    <div ng-show="french">
+                        <li>06.09.33.21.96</li>
+                    </div>
+                    <div ng-show="english">
+                        <li>+33 6.09.33.21.96</li>
+                    </div>
+                    <li>503 rue de la mairie, 60400 Appilly</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cv_skill">
+            <div ng-show="french">
+                <h2 class="cv_skill_title">Compétences</h2>
+            </div>
+            <div ng-show="english">
+                <h2 class="cv_skill_title">Skills</h2>
+            </div>
+            <div class="row" id="os_list">
+                <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><em>OS</em> <i ng-click="osAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="osHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
+                <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Linux: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="linux"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Windows: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="windows"><span class="skill_percent">40 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                </div>
+            </div>
+            <div class="row" id="langage_list">
+                <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><span ng-show="french"><em>Langages</em></span><span ng-show="english"><em>Languages</em></span> <i ng-click="langageAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="langageHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
+                <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">HTML: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="html_wave"><span class="skill_percent">80 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">CSS: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="css_wave"><span class="skill_percent">80 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">JavaScript: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="js_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">PHP: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="php_wave"><span class="skill_percent">20 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">SQL: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="sql_wave"><span class="skill_percent">20 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                </div>
+            </div>
+            <div class="row" id="framework_list">
+                <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><em>Frameworks</em> <i ng-click="frameworkAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="frameworkHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
+                <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Bootstrap: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="bootstrap_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">JQuery/UI: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="jquery_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">AngularJS: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="angular_wave"><span class="skill_percent">40 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Symfony: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="symfony_wave"><span class="skill_percent">0 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                </div>
+            </div>
+            <div class="row" id="tool_list">
+                <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12 faa-parent animated-hover cv_skill_os"><span ng-show="french"><em>Outils</em></span><span ng-show="english"><em>Tools</em></span> <i ng-click="toolAnim()" class="fa fa-angle-down faa-float faa-fast skill_toggle skill_toggle_down" aria-hidden="true"></i><i ng-click="toolHide()" class="fa fa-angle-up faa-float faa-fast skill_toggle skill_toggle_up" aria-hidden="true"></i></h3>
+                <div class="cv_skill_list col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Terminal: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="terminal_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Nano: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="nano_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Atom: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="atom_wave"><span class="skill_percent">80 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">NetBeans: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="netbeans_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                    <div class="row"><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cv_skill_name">Git: </span><div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 cv_skill_bar"><div class="cv_skill_bar_gomme"><div class="pacman_wave" id="git_wave"><span class="skill_percent">60 </span><img class="pacman" src="assets/img/fastpac.gif" alt="Pacman animé qui avance"/></div></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="article_experience" class="row">
+            <div class="col-lg-12">
+                <div ng-show="french">
                     <h2 class="cv_skill_title">Expériences Professionnelles</h2>
                     <h3 class="aside_years"><em>Février à Août 2017</em></h3>
                     <p>
@@ -120,63 +158,91 @@
                         - Réalisation d’OF & Contrôle qualité et palettisation
                     </p>
                 </div>
+                <div ng-show="english">
+                    <h2 class="cv_skill_title">Professional Experiences</h2>
+                    <h3 class="aside_years"><em>February to August 2017</em></h3>
+                    <p>
+                        <strong>Web developer at E2N - Noyon, Hauts-de-France at 50min from Paris</strong><br/>
+                        - Realization of a responsive e-commerce site<br/>
+                        - Using JQuery / AngularJS / Bootstrap<br/>
+                        - Project manager: Coordination, rigor, timeline's respect
+                    </p>
+                    <h3 class="aside_years"><em>December 2014 to April 2015</em></h3>
+                    <p>
+                        <strong>Self-employed employee, E.Leclerc - Figeac, Occitanie (46)</strong><br/>
+                        - Inventory management & Product ordering<br/>
+                        - Replenishment of shelves & Facing, Labeling<br/>
+                        - Manage in-store customer relationships
+                    </p>
+                    <h3 class="aside_years"><em>November 2011 - December 2013</em></h3>
+                    <p>
+                        <strong>Handling Operator, Majencia, Sodepack, Vabel - (60) & (02)</strong><br/>
+                        - Starting a production line<br/>
+                        - Compliance with the instructions and the order<br/>
+                        - Line Maintenance and Product Packaging
+                    </p>
+                    <h3 class="aside_years"><em>July 2010 to September 2012</em></h3>
+                    <p>
+                        <strong>Agent of industrial cleaning, Technicentre Picardie - Tergnier (02)</strong><br/>
+                        - Deployment of resources & Protective equipment<br/>
+                        - Procedure for using chemical agents<br/>
+                        - Cleaning & maintenance of machines and premises
+                    </p>
+                    <h3 class="aside_years"><em>2008 - 2011 (4 months)</em></h3>
+                    <p>
+                        <strong>Trainee plasturgy's technician, Omniplast, FSP - Hauts-de-France (80)</strong><br/>
+                        - Starting an extrusion's line (PVC / Composite)<br/>
+                        - Machinery Feeding & Maintenance and Recycling<br/>
+                        - Realization of FO & Quality control and palletization
+                    </p>
+                </div>
             </div>
-        </article>
-    </section>
-</div>
-<div ng-show="english">
-    <section class="row">
-        <aside id="aside_cv" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <p><img src="assets/img/meblack.jpg" class="img-responsive center-block" alt="Photo de Jonathan"/></p>
-        </aside>
-        <article id="article_cv_infoSkill" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-        </article>
-    </section>
-</div>
+        </div>
+    </article>
+</section>
 <div id="hobbies" class="row">
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <i class="fa fa-bicycle faa-passing animated-hover" aria-hidden="true"></i>
-        <p>Sport: Running, VTT, Randonnée</p>
+        <p><span ng-show="french">Sport: Running, VTT, Randonnée</span><span ng-show="english">Sport: Running, Mountain biking, Hiking</span></p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <i class="fa fa-gamepad faa-shake animated-hover" aria-hidden="true"></i>
-        <p>Jeux vidéo: RPG, Stratégie, Action/aventure</p>
+        <p><span ng-show="french">Jeux vidéo: RPG, Stratégie, Action/aventure</span><span ng-show="english">Video Games: RPG, Strategy, Action/adventure</span></p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <i class="fa fa-plane faa-float animated-hover" aria-hidden="true"></i>
-        <p>Voyages: Japon, Islande, Nouvelle-Zélande</p>
+        <p><span ng-show="french">Voyages: Japon, Islande, Nouvelle-Zélande</span><span ng-show="english">Travels: Japan, Iceland, New Zealand</span></p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <i class="fa fa-television faa-flash animated-hover" aria-hidden="true"></i>
-        <p>Cinéma de genre</p>
+        <p><span ng-show="french">Cinéma de genre</span><span ng-show="english">Genre Films</span></p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <i class="fa fa-space-shuttle faa-passing animated-hover" aria-hidden="true"></i>
-        <p>Astronomie, Science</p>
+        <p><span ng-show="french">Astronomie, Science</span><span ng-show="english">Astronomy, Science</span></p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <i class="fa fa-history faa-spin animated-hover" aria-hidden="true"></i>
-        <p>Histoire, Biologie</p>
+        <p><span ng-show="french">Histoire, Biologie</span><span ng-show="english">History, Biology</span></p>
     </div>
 </div>
 <div id="officialDocument" class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <h2>Certificat Opquast</h2>
+        <h2><span ng-show="french">Certificat Opquast</span><span ng-show="english">Opquast Certificate</span></h2>
         <img src="assets/img/min-opquast.jpg" class="img-responsive center-block" alt="Miniature du Certificat Opquast"/>
-        <a class="btn btn-primary" href="assets/documents/OC_QWEB2015-BP_ISNUCM.pdf" download>Télécharger</a>
-        <a class="btn btn-info" href="assets/documents/OC_QWEB2015-BP_ISNUCM.pdf">Prévisualiser</a>
+        <a class="btn btn-primary" href="assets/documents/OC_QWEB2015-BP_ISNUCM.pdf" download><span ng-show="french">Télécharger</span><span ng-show="english">Download</span></a>
+        <a class="btn btn-info" href="assets/documents/OC_QWEB2015-BP_ISNUCM.pdf"><span ng-show="french">Prévisualiser</span><span ng-show="english">Preview</span></a>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <h2>CV - Couleur</h2>
+        <h2><span ng-show="french">CV - Couleur</span><span ng-show="english">Resume - Color</span></h2>
         <img src="assets/img/min-cv-color.jpg" class="img-responsive center-block" alt="Miniature du CV papier couleur"/>
-        <a class="btn btn-primary" href="assets/documents/CV_MOROY Jonathan.pdf" download>Télécharger</a>
-        <a class="btn btn-info" href="assets/documents/CV_MOROY Jonathan.pdf">Prévisualiser</a>
+        <a class="btn btn-primary" href="assets/documents/CV_MOROY Jonathan.pdf" download><span ng-show="french">Télécharger</span><span ng-show="english">Download</span></a>
+        <a class="btn btn-info" href="assets/documents/CV_MOROY Jonathan.pdf"><span ng-show="french">Prévisualiser</span><span ng-show="english">Preview</span></a>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <h2>CV - Imprimable</h2>
+        <h2><span ng-show="french">CV - Imprimable</span><span ng-show="english">Resume - Printable</span></h2>
         <img src="assets/img/min-cv-impr.jpg" class="img-responsive center-block" alt="Miniature du CV papier imprimable"/>
-        <a class="btn btn-primary" href="assets/documents/CV_MOROY Jonathan - imprimable.pdf" download>Télécharger</a>
-        <a class="btn btn-info" href="assets/documents/CV_MOROY Jonathan - imprimable.pdf">Prévisualiser</a>
+        <a class="btn btn-primary" href="assets/documents/CV_MOROY Jonathan - imprimable.pdf" download><span ng-show="french">Télécharger</span><span ng-show="english">Download</span></a>
+        <a class="btn btn-info" href="assets/documents/CV_MOROY Jonathan - imprimable.pdf"><span ng-show="french">Prévisualiser</span><span ng-show="english">Preview</span></a>
     </div>
 </div>
