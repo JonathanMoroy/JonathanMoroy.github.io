@@ -122,12 +122,12 @@ nav div p {
 }
 /* Configuration du aside */
 /* index index_En */
-#aside_index img {
+.aside_index img {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#aside_index {
+.aside_index {
     border-right: 1px solid #00FF00;
 }
 
@@ -160,17 +160,17 @@ nav div p {
 
 /* Configuration du article */
 /* index et index_En */
-#article_index h1 {
+.article_index h1 {
     font-family: 'scripttitle', 'thyssen', 'Arial Black', Arial, Verdana, sans-serif;
     font-size: 4em;
 }
 
-#article_index {
+.article_index {
     font-size: 1.7em;
     word-wrap: break-word;
 }
 
-#e2n:hover {
+.e2n:hover {
     color:#E84B14;
     text-decoration: none;
 }
@@ -180,7 +180,7 @@ nav div p {
     color: #00FF00;
 }
 
-#article_index p:nth-child(4) {
+.article_index p:nth-child(4) {
     text-align: right;
 }
 
@@ -373,10 +373,10 @@ footer img {
 /* Les paramètres des medias */
 @media screen and (max-width: 1200px) {
     /* index et index_En */
-    #article_index h1 {
+    .article_index h1 {
         font-size: 3.5em;
     }
-    #article_index p {
+    .article_index p {
         font-size: 0.8em;
     }
     .cv_skill_bar_gomme {
@@ -397,10 +397,10 @@ footer img {
         font-size: 1.2em;
     }
     
-    #article_index h1 {
+    .article_index h1 {
         font-size: 2.3em;
     }
-    #article_index p {
+    .article_index p {
         font-size: 0.6em;
     }
     /* CV */
@@ -431,7 +431,7 @@ footer img {
         background-image: url("../img/background/bckgrnd768.jpg");
     }
     /* index et index_En */
-    #aside_index {
+    .aside_index {
         border-right: 0px;
         border-bottom: 1px solid #00FF00;
     }
