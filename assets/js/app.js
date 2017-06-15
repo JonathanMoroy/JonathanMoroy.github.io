@@ -81,8 +81,8 @@ resumeApp.controller('indexCtrl', ['$scope', function ($scope) {
             $('#html_wave').delay(1500).animate({'padding-left': '75%'}, 2000);
             $('#css_wave').delay(1500).animate({'padding-left': '75%'}, 2000);
             $('#js_wave').delay(1500).animate({'padding-left': '55%'}, 2000);
-            $('#php_wave').delay(1500).animate({'padding-left': '15%'}, 2000);
-            $('#sql_wave').delay(1500).animate({'padding-left': '15%'}, 2000);
+            $('#php_wave').delay(1500).animate({'padding-left': '55%'}, 2000);
+            $('#sql_wave').delay(1500).animate({'padding-left': '35%'}, 2000);
             $('#langage_list .skill_percent').delay(1900).animate({opacity: '1'}, 0);            
             $('#langage_list .skill_percent').delay(0).each(function () {
                 $(this).prop('Counter', 0).animate({
